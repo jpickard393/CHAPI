@@ -18,6 +18,9 @@ namespace CHAPI.Models
 
         [JsonProperty("insolvency")]
         public string Insolvency { get; set; }
+
+        [JsonProperty("company_profile")]
+        public string CompanyProfile { get; set; }
     }
 
 }

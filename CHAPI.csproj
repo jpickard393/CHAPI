@@ -15,5 +15,9 @@
   <ItemGroup>
     <None Remove="Newtonsoft.Json" />
     <None Remove="Microsoft.VisualStudio.Web.CodeGeneration.Design" />
+    <None Remove="Models\SearchAdanced\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\AdvancedSearch\" />
   </ItemGroup>
 </Project>

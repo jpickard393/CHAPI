@@ -23,13 +23,13 @@ namespace CHAPI.Controllers
         }
 
         [HttpGet]
-        [Route("/api/company/{companyNumber}")]
+        [Route("/company/{companyNumber}")]
         public async Task<ActionResult<Company>> Get(string companyNumber)
         {
             if (!string.IsNullOrWhiteSpace(companyNumber))
             {
                 GetCompany request = new GetCompany(_config);
-                
+
                 var company = await request.GetCompanyById(companyNumber);
                 return company != null ? Ok(company) : NotFound();
             }

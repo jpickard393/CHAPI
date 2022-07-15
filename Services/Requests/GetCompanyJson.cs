@@ -2,18 +2,18 @@
 using CHAPI.Models;
 namespace CHAPI.Services.Requests
 {
-    public class GetCompany
+    public class GetCompanyJson
     {
         private readonly IConfiguration _config;
 
-        public GetCompany(IConfiguration configuration)
+        public GetCompanyJson(IConfiguration configuration)
         {
             _config = configuration;
         }
 
-        public async Task<Company> GetCompanyById(string companyNumber)
+        public async Task<string> GetCompanyById(string companyNumber)
         {
-            var companyData = new Company();
+            var company = string.Empty;
             if (!string.IsNullOrWhiteSpace(companyNumber))
             {
                 var baseUrl = _config.GetValue<string>("baseUrl");
@@ -24,10 +24,10 @@ namespace CHAPI.Services.Requests
 
                 string path = baseUrl + "company/";
 
-                CHAPIRequest request = new CHAPIRequest();
-                companyData = await request.GetCompanyData(apiKey, path, companyNumber);
+                CHAPIRequestJson request = new CHAPIRequestJson();
+                company = await request.GetCompanyData(apiKey, path, companyNumber);
             }
-            return companyData;
+            return company;
         }
     }
 }
