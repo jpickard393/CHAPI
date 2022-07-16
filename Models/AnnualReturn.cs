@@ -5,10 +5,10 @@ namespace CHAPI.Models
     public class AnnualReturn
     {
         [JsonProperty("last_made_up_to")]
-        public string LastMadeUpTo { get; set; }
+        public string last_made_up_to { get; set; }
 
         [JsonProperty("overdue")]
-        public bool Overdue { get; set; }
+        public bool overdue { get; set; }
     }
 
 }

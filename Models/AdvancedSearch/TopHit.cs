@@ -5,31 +5,31 @@ namespace CHAPI.Models.AdvancedSearch
     public class TopHit
     {
         [JsonProperty("company_name")]
-        public string? CompanyName { get; set; }
+        public string? company_name { get; set; }
 
         [JsonProperty("company_number")]
-        public string? CompanyNumber { get; set; }
+        public string? company_number { get; set; }
 
         [JsonProperty("company_status")]
-        public string? CompanyStatus { get; set; }
+        public string? company_status { get; set; }
 
         [JsonProperty("company_type")]
-        public string? CompanyType { get; set; }
+        public string? company_type { get; set; }
 
         [JsonProperty("kind")]
-        public string? Kind { get; set; }
+        public string? kind { get; set; }
 
         [JsonProperty("links")]
-        public Links? Links { get; set; }
+        public Links? links { get; set; }
 
         [JsonProperty("date_of_creation")]
-        public string? DateOfCreation { get; set; }
+        public string? date_of_creation { get; set; }
 
         [JsonProperty("registered_office_address")]
-        public RegisteredOfficeAddress? RegisteredOfficeAddress { get; set; }
+        public RegisteredOfficeAddress? registered_office_address { get; set; }
 
         [JsonProperty("sic_codes")]
-        public List<string>? SicCodes { get; set; }
+        public List<string>? sic_codes { get; set; }
     }
 }
 

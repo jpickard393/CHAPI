@@ -5,22 +5,22 @@ namespace CHAPI.Models
     public class RegisteredOfficeAddress
     {
         [JsonProperty("postal_code")]
-        public string? PostalCode { get; set; }
+        public string? postal_code { get; set; }
 
         [JsonProperty("region")]
-        public string? Region { get; set; }
+        public string? region { get; set; }
 
         [JsonProperty("address_line_1")]
-        public string? AddressLine1 { get; set; }
+        public string? address_line_1 { get; set; }
 
         [JsonProperty("address_line_2")]
-        public string? AddressLine2 { get; set; }
+        public string? address_line_2 { get; set; }
 
         [JsonProperty("locality")]
-        public string? Locality { get; set; }
+        public string? locality { get; set; }
 
         [JsonProperty("country")]
-        public string? Country { get; set; }
+        public string? country { get; set; }
     }
 
 }

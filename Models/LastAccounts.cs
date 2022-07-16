@@ -5,16 +5,16 @@ namespace CHAPI.Models
     public class LastAccounts
     {
         [JsonProperty("made_up_to")]
-        public string MadeUpTo { get; set; }
+        public string made_up_to { get; set; }
 
         [JsonProperty("period_start_on")]
-        public string PeriodStartOn { get; set; }
+        public string period_start_on { get; set; }
 
         [JsonProperty("period_end_on")]
-        public string PeriodEndOn { get; set; }
+        public string period_end_on { get; set; }
 
         [JsonProperty("type")]
-        public string Type { get; set; }
+        public string type { get; set; }
     }
 
 }
